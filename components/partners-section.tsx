@@ -1,5 +1,7 @@
 "use client"
 
+import FeaturesGrid from "./features-grid"
+
 export default function PartnersSection() {
   return (
     <section className="bg-black text-white py-16">
@@ -117,6 +119,8 @@ export default function PartnersSection() {
             </div>
           </div>
         </div>
+
+        <FeaturesGrid />
       </div>
     </section>
   )
