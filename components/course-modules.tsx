@@ -83,9 +83,33 @@ export default function CourseModules() {
                 </div>
               </div>
             </Link>
-            {modules.slice(1).map((module, index) => (
+
+            <Link href="/recursos/gpt-forex-pro-avanzado/modulo-1" className="block">
+              <div className="bg-black rounded-lg p-6 border border-zinc-800 hover:border-purple-600 transition-colors cursor-pointer">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-6">
+                    <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center font-bold">
+                      01
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold mb-2">Fundamentos del Análisis Técnico Automatizado</h3>
+                      <p className="text-gray-400 text-sm">
+                        Lo que vas a aprender aquí es cómo traducir ese proceso a un lenguaje estructurado que el GPT
+                        pueda entender. Y lo más poderoso: te responderá en segundos con setups claros y justificados.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-gray-400 mb-1">12 min</div>
+                    <div className="text-sm text-purple-400">4 lecciones</div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {modules.slice(2).map((module, index) => (
               <div
-                key={index + 1}
+                key={index + 2}
                 className="bg-black rounded-lg p-6 border border-zinc-800 hover:border-purple-600 transition-colors"
               >
                 <div className="flex items-center justify-between">

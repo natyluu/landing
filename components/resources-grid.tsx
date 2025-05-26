@@ -3,14 +3,14 @@
 export default function ResourcesGrid() {
   const resources = [
     {
-      category: "Guía",
-      title: "Introducción al Análisis Técnico con IA",
+      category: "Herramienta",
+      title: "Estrategias Técnicas y Simulación de Setups",
       description:
-        "Aprende los fundamentos del análisis técnico y cómo la inteligencia artificial puede potenciar tus decisiones de trading.",
-      readTime: "15 min",
-      difficulty: "Principiante",
-      image: "/placeholder.svg?height=200&width=300&query=forex chart analysis",
-      link: "#",
+        "Plataforma completa para crear, probar y validar estrategias de trading técnicas con simulación en tiempo real.",
+      readTime: "Interactivo",
+      difficulty: "Todos",
+      image: "/placeholder.svg?height=200&width=300&query=trading strategies simulation",
+      link: "/recursos/estrategias-tecnicas-simulacion-setups",
     },
     {
       category: "Tutorial",

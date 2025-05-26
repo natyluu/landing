@@ -181,6 +181,29 @@ export default function ModuleContent() {
                       </ol>
                       <p className="mb-2">Este será tu primer paso.</p>
                       <p>Y desde aquí, empezaremos a construir… setups reales.</p>
+                      <div className="bg-zinc-900 rounded-lg p-6 border border-zinc-800 mt-6">
+                        <p className="mb-3">Esto fue solo la base.</p>
+                        <p className="mb-4">En el próximo módulo, vas a construir una estrategia completa:</p>
+                        <ul className="space-y-2 ml-6 mb-4">
+                          <li className="flex items-start gap-2">
+                            <span className="text-purple-400 mt-1">✓</span>
+                            <span>Entrada, salida, TP1, TP2, TP final y Stop Loss.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-purple-400 mt-1">✓</span>
+                            <span>Todo generado por GPT.</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-purple-400 mt-1">✓</span>
+                            <span>Y validado por ti.</span>
+                          </li>
+                        </ul>
+                        <p className="mb-3">Ahora que sabes cómo automatizar tu análisis,</p>
+                        <p className="mb-3">es momento de pensar como trader,</p>
+                        <p className="mb-3">escribir como ingeniero,</p>
+                        <p className="mb-3">y ejecutar como institución.</p>
+                        <p className="font-semibold text-purple-300">Nos vemos en el Módulo 2.</p>
+                      </div>
                     </div>
 
                     <div>
@@ -248,140 +271,66 @@ export default function ModuleContent() {
                     </div>
                   </div>
                 </div>
-
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Recursos Adicionales</h3>
-                  <div className="space-y-3">
-                    <a
-                      href="#"
-                      className="flex items-center gap-3 p-4 bg-zinc-900 rounded-lg hover:bg-zinc-800 transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-purple-400"
-                      >
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                        <polyline points="14,2 14,8 20,8" />
-                      </svg>
-                      <div>
-                        <h4 className="font-medium">Guía de Configuración Inicial</h4>
-                        <p className="text-gray-400 text-sm">PDF con pasos detallados para comenzar</p>
-                      </div>
-                    </a>
-
-                    <a
-                      href="#"
-                      className="flex items-center gap-3 p-4 bg-zinc-900 rounded-lg hover:bg-zinc-800 transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-purple-400"
-                      >
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                        <polyline points="14,2 14,8 20,8" />
-                      </svg>
-                      <div>
-                        <h4 className="font-medium">Plantillas de Prompts Básicos</h4>
-                        <p className="text-gray-400 text-sm">Ejemplos listos para usar en tus primeras consultas</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="bg-zinc-900 rounded-lg p-6 sticky top-8">
-                <h3 className="text-lg font-bold mb-4">Lecciones del Módulo</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3 p-3 bg-purple-600 rounded-lg">
-                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-purple-600"
-                      >
-                        <polygon points="5 3 19 12 5 21 5 3" />
-                      </svg>
-                    </div>
+                <h3 className="text-lg font-bold mb-4">Recursos Adicionales</h3>
+                <div className="space-y-3 mb-8">
+                  <a
+                    href="#"
+                    className="flex items-center gap-3 p-4 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-purple-400"
+                    >
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14,2 14,8 20,8" />
+                    </svg>
                     <div>
-                      <h4 className="font-medium text-sm">Bienvenida al Curso</h4>
-                      <p className="text-purple-200 text-xs">3:24</p>
+                      <h4 className="font-medium text-sm">Guía de Configuración Inicial</h4>
+                      <p className="text-gray-400 text-xs">PDF con pasos detallados para comenzar</p>
                     </div>
-                  </div>
+                  </a>
 
-                  <div className="flex items-center gap-3 p-3 bg-zinc-800 rounded-lg cursor-pointer hover:bg-zinc-700 transition-colors">
-                    <div className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-gray-400"
-                      >
-                        <polygon points="5 3 19 12 5 21 5 3" />
-                      </svg>
-                    </div>
+                  <a
+                    href="#"
+                    className="flex items-center gap-3 p-4 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-purple-400"
+                    >
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14,2 14,8 20,8" />
+                    </svg>
                     <div>
-                      <h4 className="font-medium text-sm">¿Qué es el GPT Forex Pro?</h4>
-                      <p className="text-gray-400 text-xs">2:45</p>
+                      <h4 className="font-medium text-sm">Plantillas de Prompts Básicos</h4>
+                      <p className="text-gray-400 text-xs">Ejemplos listos para usar en tus primeras consultas</p>
                     </div>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-3 bg-zinc-800 rounded-lg cursor-pointer hover:bg-zinc-700 transition-colors">
-                    <div className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-gray-400"
-                      >
-                        <polygon points="5 3 19 12 5 21 5 3" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-sm">Configuración Inicial</h4>
-                      <p className="text-gray-400 text-xs">1:51</p>
-                    </div>
-                  </div>
+                  </a>
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-zinc-800">
+                <div className="pt-6 border-t border-zinc-800">
                   <h4 className="font-medium mb-4">Progreso del Curso</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
