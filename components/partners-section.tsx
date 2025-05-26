@@ -9,7 +9,7 @@ export default function PartnersSection() {
         <div className="text-center mb-8">
           <p
             className="font-medium uppercase tracking-wider text-sm"
-            style={{ color: "#8b3bc0" }}
+            style={{ color: "#ffffff" }}
           >
             RESPUESTAS INSTANTÁNEAS A PREGUNTAS COMPLEJAS DE FOREX
           </p>
