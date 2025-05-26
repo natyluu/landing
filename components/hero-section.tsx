@@ -4,7 +4,7 @@ import SplineComponent from "./spline-component"
 
 export default function HeroSection() {
   return (
-    <main className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
+    <main className="container mx-auto px-4 py-16 md:py-24 pb-8 md:pb-12 flex flex-col md:flex-row items-center">
       <div className="md:w-1/2 space-y-6">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
           Asistente

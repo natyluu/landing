@@ -19,7 +19,7 @@ export default function Navigation() {
           />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#" className="text-sm hover:text-gray-300 transition-colors">
+          <Link href="/recursos" className="text-sm hover:text-gray-300 transition-colors">
             Recursos
           </Link>
           <Link href="#" className="text-sm hover:text-gray-300 transition-colors">

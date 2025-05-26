@@ -1,27 +1,31 @@
 "use client"
 
-import { useState } from "react"
-import dynamic from "next/dynamic"
-
-// Importar Spline component con no SSR para evitar problemas de hidratación
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-full bg-black flex items-center justify-center">
-      <div className="text-white/50">Cargando escena 3D...</div>
-    </div>
-  ),
-})
+import { useState, useEffect } from "react"
 
 export default function BlockchainHero() {
   const [selectedOption, setSelectedOption] = useState<string>("buscar")
+
+  useEffect(() => {
+    // Add the Spline Viewer script
+    const script = document.createElement("script")
+    script.type = "module"
+    script.src = "https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"
+    document.body.appendChild(script)
+
+    return () => {
+      // Clean up the script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script)
+      }
+    }
+  }, [])
 
   return (
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Spline como fondo */}
       <div className="absolute inset-0 z-0">
-        <Spline
-          scene="https://prod.spline.design/TOFbcbaltP9wyufq/scene.splinecode"
+        <spline-viewer
+          url="https://prod.spline.design/TOFbcbaltP9wyufq/scene.splinecode"
           style={{ width: "100%", height: "100%" }}
         />
       </div>

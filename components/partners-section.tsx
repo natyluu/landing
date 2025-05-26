@@ -4,7 +4,7 @@ import FeaturesGrid from "./features-grid"
 
 export default function PartnersSection() {
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-black text-white pt-8 pb-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <p className="text-blue-400 font-medium uppercase tracking-wider text-sm">
