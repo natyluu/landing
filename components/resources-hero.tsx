@@ -6,9 +6,7 @@ export default function ResourcesHero() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text">
-              Recursos
-            </span>
+            <span className="bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text">Cursos</span>
             <br />
             para <span className="text-gray-300">traders</span>
           </h1>

@@ -14,13 +14,13 @@ export default function ResourcesGrid() {
     },
     {
       category: "Tutorial",
-      title: "Configurando tu Primer GPT Forex Pro",
+      title: "GPT forex pro avanzado",
       description:
-        "Guía paso a paso para configurar y optimizar tu asistente de trading con IA para obtener los mejores resultados.",
-      readTime: "10 min",
+        "Al finalizar este curso, serás capaz de analizar cualquier activo financiero en tiempo real usando prompts estructurados para GPT.",
+      readTime: "45 min",
       difficulty: "Principiante",
       image: "/placeholder.svg?height=200&width=300&query=AI trading setup",
-      link: "#",
+      link: "/recursos/gpt-forex-pro-avanzado",
     },
     {
       category: "Herramienta",
@@ -112,9 +112,10 @@ export default function ResourcesGrid() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {resources.map((resource, index) => (
-            <div
+            <a
               key={index}
-              className="bg-zinc-900 rounded-lg overflow-hidden hover:bg-zinc-800 transition-colors group cursor-pointer"
+              href={resource.link}
+              className="bg-zinc-900 rounded-lg overflow-hidden hover:bg-zinc-800 transition-colors group cursor-pointer block"
             >
               <div className="aspect-video bg-zinc-800 relative overflow-hidden">
                 <img
@@ -163,7 +164,7 @@ export default function ResourcesGrid() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 

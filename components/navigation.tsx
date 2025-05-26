@@ -6,68 +6,39 @@ import { Button } from "@/components/ui/button"
 
 export default function Navigation() {
   return (
-    <header
-      className="w-full"
-      style={{
-        background: "#0D0D0D",
-        borderBottom: "1px solid #1b123F",
-        position: "sticky",
-        top: 0,
-        zIndex: 30,
-      }}
-    >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-10">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/xentris-trading.png"
-              alt="Xentris Logo"
-              width={54}
-              height={54}
-              className="h-14 w-auto"
-              priority
-            />
+    <header className="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div className="flex items-center gap-12">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/xentris-trading.png"
+            alt="Xentris Logo"
+            width={70}
+            height={70}
+            className="h-16 w-auto"
+            priority
+          />
+        </Link>
+        <nav className="hidden md:flex items-center gap-6">
+          <Link href="/recursos" className="text-sm hover:text-gray-300 transition-colors">
+            Cursos
           </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link
-              href="/recursos"
-              className="text-sm font-medium transition-colors hover:text-[#8b3bc0]"
-            >
-              Recursos
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium transition-colors hover:text-[#8b3bc0]"
-            >
-              Blog
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium transition-colors hover:text-[#8b3bc0]"
-            >
-              Promts
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium transition-colors hover:text-[#8b3bc0]"
-            >
-              GPT Forex Pro
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium transition-colors hover:text-[#8b3bc0]"
-            >
-              Empresa
-            </Link>
-          </nav>
-        </div>
-        <Button
-          variant="outline"
-          className="border-[#8b3bc0] text-white hover:text-[#8b3bc0] hover:border-[#8b3bc0] transition-colors font-semibold px-5 py-2"
-        >
-          Iniciar Sesión
-        </Button>
+          <Link href="#" className="text-sm hover:text-gray-300 transition-colors">
+            Blog
+          </Link>
+          <Link href="#" className="text-sm hover:text-gray-300 transition-colors">
+            Promts
+          </Link>
+          <Link href="#" className="text-sm hover:text-gray-300 transition-colors">
+            GPT Forex Pro
+          </Link>
+          <Link href="#" className="text-sm hover:text-gray-300 transition-colors">
+            Empresa
+          </Link>
+        </nav>
       </div>
+      <Button variant="link" className="text-white hover:text-gray-300">
+        Iniciar Sesión
+      </Button>
     </header>
-  );
+  )
 }

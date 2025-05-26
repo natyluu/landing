@@ -27,38 +27,33 @@ export default function PartnersSection() {
           </p>
         </div>
 
-     <div className="flex justify-center mb-16">
-  <a
-    href="https://chatgpt.com/g/g-Apjq2CgWQ-gpt-forex-pro"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium py-3 px-6 rounded-lg flex items-center gap-2 transition-colors hover:bg-[#331659]"
-    style={{
-      background: "#8b3bc0",
-      color: "#fff",
-      boxShadow: "0 4px 24px 0 #8b3bc033",
-      textDecoration: "none"
-    }}
-  >
-    PROBAR GPT FOREX PRO
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="lucide lucide-arrow-right"
-    >
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    </svg>
-  </a>
-</div>
-
+        <div className="flex justify-center mb-16">
+          <button
+            style={{
+              background: "#8b3bc0",
+              color: "#fff",
+              boxShadow: "0 4px 24px 0 #8b3bc033"
+            }}
+            className="font-medium py-3 px-6 rounded-lg flex items-center gap-2 transition-colors hover:bg-[#331659]"
+          >
+            PROBAR GPT FOREX PRO
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-arrow-right"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
 
         <div className="max-w-4xl mx-auto mb-12">
           <div className="flex flex-col items-center mb-8">
@@ -69,16 +64,7 @@ export default function PartnersSection() {
               <img src="/images/xentris-logo-clean.png" alt="Xentris Logo" className="w-12 h-12 object-contain" />
             </div>
             <h4 className="text-xl font-bold mb-1">GPT Forex Pro 📊</h4>
-            <a
-  href="https://xentris.tech"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-sm"
-  style={{ color: "#b1a2d6", textDecoration: "underline" }}
->
-  Por xentris.tech
-</a>
-
+            <p className="text-sm" style={{ color: "#b1a2d6" }}>Por community builder ⚒️</p>
             <p className="text-center text-sm mt-2" style={{ color: "#b1a2d6" }}>
               Finance Trading & Investing: Forex, Stocks, Crypto highlights its technical, fundamental, and sentiment
               analysis capabilities, along with its integration with the TwelveData API.
