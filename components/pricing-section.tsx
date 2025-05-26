@@ -1,53 +1,51 @@
 "use client"
 
 export default function PricingSection() {
+  // Lista de features, idénticas para ambos planes
+  const features = [
+    "Análisis técnico, fundamental e institucional",
+    "Consultas ilimitadas",
+    "Todos los indicadores disponibles",
+    "Datos en tiempo real (TwelveData API)",
+    "Señales de trading personalizadas",
+    "Análisis de sentimiento de mercado",
+    "Soporte prioritario 24/7",
+    "Estrategias adaptadas a tu perfil",
+  ];
+
+  // Definición de los planes
   const plans = [
     {
-      name: "Gratuito",
+      name: "Prueba Gratis",
       price: "$0",
-      period: "para siempre",
-      description: "Perfecto para comenzar con análisis básico",
-      features: [
-        "Análisis técnico básico",
-        "3 consultas por día",
-        "Indicadores principales (RSI, MACD)",
-        "Acceso a datos históricos",
-        "Soporte por email",
-      ],
-      buttonText: "Comenzar Gratis",
-      buttonStyle: "border border-white text-white hover:bg-white hover:text-black",
+      period: "por 5 días",
+      description: "Acceso completo a todas las funciones durante 5 días.",
+      features,
+      buttonText: "Probar Gratis 5 Días",
+      buttonStyle: "border border-[#8b3bc0] text-white hover:bg-[#8b3bc0] hover:text-white",
       popular: false,
     },
     {
       name: "Pro",
       price: "$30",
       period: "por mes",
-      description: "Para traders serios que buscan análisis completo",
-      features: [
-        "Análisis técnico, fundamental e institucional",
-        "Consultas ilimitadas",
-        "Todos los indicadores disponibles",
-        "Datos en tiempo real (TwelveData API)",
-        "Señales de trading personalizadas",
-        "Análisis de sentimiento de mercado",
-        "Soporte prioritario 24/7",
-        "Estrategias adaptadas a tu perfil",
-      ],
+      description: "Acceso completo ilimitado a todas las funciones.",
+      features,
       buttonText: "Suscribirse Ahora",
-      buttonStyle: "bg-purple-600 hover:bg-purple-700 text-white",
+      buttonStyle: "text-white",
       popular: true,
     },
-  ]
+  ];
 
   return (
-    <section className="bg-black text-white py-20">
+    <section className="py-20" style={{ backgroundColor: "#0D0D0D", color: "#fff" }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Elige tu <span className="text-purple-500">plan</span>
+            Elige tu <span style={{ color: '#8b3bc0' }}>plan</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Comienza gratis y actualiza cuando estés listo para desbloquear todo el potencial de nuestro análisis con IA
+          <p className="text-[#b1a2d6] text-lg max-w-2xl mx-auto">
+            Disfruta acceso completo sin límites durante 5 días. Si te gusta, continúa con todas las funciones en el plan Pro.
           </p>
         </div>
 
@@ -55,15 +53,20 @@ export default function PricingSection() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative rounded-2xl p-8 border transition-all duration-300 hover:scale-105 ${
-                plan.popular
-                  ? "border-purple-500 bg-gradient-to-b from-purple-900/20 to-black"
-                  : "border-zinc-800 bg-zinc-900/50"
-              }`}
+              className="relative rounded-2xl p-8 border transition-all duration-300 hover:scale-105"
+              style={{
+                borderColor: plan.popular ? '#8b3bc0' : '#331659',
+                background: plan.popular
+                  ? `linear-gradient(to bottom, #331659 0%, #1b123F 60%, #0D0D0D 100%)`
+                  : `linear-gradient(to bottom, #1b123F 0%, #0D0D0D 100%)`
+              }}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                  <span
+                    className="text-white px-4 py-2 rounded-full text-sm font-medium"
+                    style={{ backgroundColor: '#8b3bc0' }}
+                  >
                     Más Popular
                   </span>
                 </div>
@@ -73,43 +76,55 @@ export default function PricingSection() {
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <div className="mb-2">
                   <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-gray-400 ml-2">{plan.period}</span>
+                  <span className="text-[#b1a2d6] ml-2">{plan.period}</span>
                 </div>
-                <p className="text-gray-400 text-sm">{plan.description}</p>
+                <p className="text-[#b1a2d6] text-sm">{plan.description}</p>
               </div>
 
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                      style={{ color: '#8b3bc0' }}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-sm text-gray-300">{feature}</span>
+                    <span className="text-sm text-[#e0d7f7]">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <button className={`w-full py-3 px-6 rounded-lg font-medium transition-colors ${plan.buttonStyle}`}>
+              <button
+                className={`w-full py-3 px-6 rounded-lg font-medium transition-colors ${plan.buttonStyle}`}
+                style={
+                  plan.popular
+                    ? { backgroundColor: '#8b3bc0', borderColor: '#8b3bc0' }
+                    : undefined
+                }
+                onMouseEnter={plan.popular ? (e) => {
+                  e.currentTarget.style.backgroundColor = '#331659'
+                } : undefined}
+                onMouseLeave={plan.popular ? (e) => {
+                  e.currentTarget.style.backgroundColor = '#8b3bc0'
+                } : undefined}
+              >
                 {plan.buttonText}
               </button>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-gray-400 text-sm">
-            ¿Necesitas algo personalizado?
-            <a href="#" className="text-purple-500 hover:text-purple-400 ml-1">
-              Contáctanos para planes empresariales
-            </a>
+        <div className="text-center mt-8">
+          <p className="text-[#b1a2d6] text-sm">
+            Disfruta todas las funciones sin restricciones durante 5 días.<br />
+            Luego, podrás suscribirte para seguir accediendo a todo.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
